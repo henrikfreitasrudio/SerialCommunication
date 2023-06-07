@@ -1,0 +1,2 @@
+# SerialCommunication
+ .NET 7
