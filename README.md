@@ -1,2 +1,2 @@
 # SerialCommunication
- .NET 7
+ Tutorial de WPF usando .NET 7
