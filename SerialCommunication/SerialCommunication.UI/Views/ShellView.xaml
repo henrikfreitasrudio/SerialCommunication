@@ -5,9 +5,37 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SerialCommunication.UI.Views"
         mc:Ignorable="d"
-        Title="ShellView" Height="450" Width="800"
-        WindowStartupLocation="CenterScreen">
+        Title="Serial Communication" 
+        Height="450" 
+        Width="800"
+        WindowStartupLocation="CenterScreen"
+        Icon="/Resources/Images/usb.png"
+        FontFamily="Segoe UI"
+        FontSize="18">
+    
     <Grid>
+        
         <ContentControl x:Name="ActiveItem" Margin="20" />
+
+        <DockPanel>
+
+            <StackPanel Margin="20" HorizontalAlignment="Left">
+                <TextBlock Text="Port:" />
+                <TextBlock Text="Baud rate: " />
+                <TextBlock Text="Parity: " />
+                <TextBlock Text="Data bit: " />
+                <TextBlock Text="Stop bit:" />
+            </StackPanel>
+
+            <StackPanel Margin="20" HorizontalAlignment="Left">
+                <ComboBox Width="100" Height="20" Margin="5"/>
+                <ComboBox Width="100" Height="20" Margin="5,0,5,5"/>
+                <ComboBox Width="100" Height="20" Margin="5,0,5,5"/>
+                <ComboBox Width="100" Height="20" Margin="5,0,5,5"/>
+                <ComboBox Width="100" Height="20" Margin="5,0,5,5"/>
+            </StackPanel>
+
+        </DockPanel>
+        
     </Grid>
 </Window>

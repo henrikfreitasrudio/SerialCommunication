@@ -14,6 +14,8 @@ namespace SerialCommunication.UI
         public Bootstrapper()
         {
             Initialize();
+
+            LogManager.GetLog = type => new DebugLog(type);
         }
 
         protected override async void OnStartup(object sender, StartupEventArgs e)
