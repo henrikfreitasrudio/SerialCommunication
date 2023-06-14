@@ -9,5 +9,6 @@ namespace SerialCommunication.UI.ViewModels
 {
     public class ShellViewModel : Conductor<object>
     {
+
     }
 }
